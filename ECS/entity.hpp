@@ -18,8 +18,8 @@ class entity
 private:
     std::vector<component*> components;
     bool alive = true;
-    bool bitSetArray[32];
-    component* componentArray[32];
+    bool bitSetArray[ECS_MAX_COMPONENTS];
+    component* componentArray[ECS_MAX_COMPONENTS];
 public:
     // We need to a way to check if the entity has a component already
     template <typename T>
